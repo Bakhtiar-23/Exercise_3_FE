@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#validationResult {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.zipDigit1 {
+    color: red;
+}
+
+.zipDigit2 {
+    color: green;
+}
+
+.zipDigit3 {
+    color: blue;
+}
+
+.zipDigit4 {
+    color: orange;
+}
+
+.zipDigit5 {
+    color: purple;
+}
+

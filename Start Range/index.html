@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Integer Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Integer Generator</h1>
+        <button id="generateButton">Generate Random Integer</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        // JavaScript code here
+        function getRandomIntegerFromRange(startRange, endRange) {
+            if (startRange > endRange) {
+                throw new Error('Start range must be less than or equal to end range.');
+            }
+    
+            return Math.floor(Math.random() * (endRange - startRange + 1)) + startRange;
+        }
+    
+        const generateButton = document.getElementById('generateButton');
+        const resultParagraph = document.getElementById('result');
+    
+        generateButton.addEventListener('click', function() {
+            const startRange = 1; // Set your start range here
+            const endRange = 10; // Set your end range here
+    
+            try {
+                const randomInteger = getRandomIntegerFromRange(startRange, endRange);
+                resultParagraph.innerHTML = `
+                    <p>Random integer between ${startRange} and ${endRange}:</p>
+                    <p style="font-size: 150px; color: green;">${randomInteger}</p>
+                `;
+            } catch (error) {
+                resultParagraph.textContent = error.message;
+            }
+        });
+    </script>
+    <script src="startRange.js"></script>
+</body>
+</html>
+
+    
+

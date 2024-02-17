@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #f6f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.resultText {
+    font-size: 24px;
+    color: green;
+}

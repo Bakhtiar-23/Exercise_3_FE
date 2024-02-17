@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#personInfo {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.personName {
+    color: #FF5733; /* Orange color for person name */
+}
+
+.personAge {
+    color: #3399FF; /* Blue color for person age */
+}
+
+.personGreeting {
+    color: #33CC33; /* Green color for person greeting */
+}
